@@ -158,7 +158,7 @@ export default function Navbar() {
 
       {/* MOBILE MENU */}
 
-      <div className={`mobile-menu glass ${menuOpen ? "open" : ""}`}>
+      <div className={`mobile-menu  ${menuOpen ? "open" : ""}`}>
         <button
           className="close-btn"
           onClick={() => setMenuOpen(false)}
