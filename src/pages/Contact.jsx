@@ -76,7 +76,7 @@ export default function Contact() {
               <div>
                 <h4>Phone</h4>
 
-                <p>+91 XXXXX XXXXX</p>
+                <p>+91 99260 68558</p>
               </div>
             </div>
 
@@ -86,7 +86,7 @@ export default function Contact() {
               <div>
                 <h4>Location</h4>
 
-                <p>India</p>
+                <p>India Madhya Pradesh</p>
               </div>
             </div>
 
