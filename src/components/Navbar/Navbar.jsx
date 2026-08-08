@@ -2,8 +2,7 @@ import { NavLink } from "react-router-dom";
 import { useState, useEffect } from "react";
 import anime from "animejs";
 import { HiOutlineMoon, HiOutlineSun, HiBars3, HiXMark } from "react-icons/hi2";
-
-import useTheme from "../../hooks/useTheme";
+import useTheme from "../../hooks/useTheme.jsx";
 
 import "./Navbar.css";
 
