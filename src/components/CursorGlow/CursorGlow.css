@@ -1,0 +1,97 @@
+/* ==========================================
+   CURSOR GLOW
+========================================== */
+
+.cursor-glow {
+  position: fixed;
+
+  left: 0;
+  top: 0;
+
+  width: 320px;
+  height: 320px;
+
+  transform: translate(-50%, -50%);
+
+  border-radius: 50%;
+
+  pointer-events: none;
+
+  z-index: 0;
+
+  opacity: 0.45;
+
+  filter: blur(80px);
+
+  background: radial-gradient(
+    circle,
+    rgba(124, 58, 237, 0.42) 0%,
+    rgba(56, 189, 248, 0.28) 45%,
+    transparent 75%
+  );
+
+  transition:
+    width 0.35s ease,
+    height 0.35s ease,
+    opacity 0.35s ease;
+
+  will-change: transform, left, top;
+}
+
+/* ==========================================
+   HOVER EFFECT
+========================================== */
+
+.cursor-glow.active {
+  width: 420px;
+  height: 420px;
+
+  opacity: 0.65;
+}
+
+/* ==========================================
+   BUTTON HOVER
+========================================== */
+
+button:hover ~ .cursor-glow,
+a:hover ~ .cursor-glow {
+  opacity: 0.7;
+}
+
+/* ==========================================
+   DARK MODE
+========================================== */
+
+body.dark .cursor-glow {
+  background: radial-gradient(
+    circle,
+    rgba(124, 58, 237, 0.45) 0%,
+    rgba(59, 130, 246, 0.3) 40%,
+    transparent 75%
+  );
+}
+
+/* ==========================================
+   LIGHT MODE
+========================================== */
+
+body.light .cursor-glow {
+  background: radial-gradient(
+    circle,
+    rgba(109, 40, 217, 0.28) 0%,
+    rgba(37, 99, 235, 0.2) 40%,
+    transparent 75%
+  );
+
+  opacity: 0.35;
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 992px) {
+  .cursor-glow {
+    display: none;
+  }
+}

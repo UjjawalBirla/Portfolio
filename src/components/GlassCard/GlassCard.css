@@ -1,0 +1,112 @@
+/* ==========================================
+   GLASS CARD
+========================================== */
+
+.glass-card {
+  position: relative;
+
+  overflow: hidden;
+
+  border-radius: 28px;
+
+  padding: 28px;
+
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.08),
+    rgba(255, 255, 255, 0.03)
+  );
+
+  backdrop-filter: blur(22px);
+  -webkit-backdrop-filter: blur(22px);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  box-shadow:
+    0 12px 35px rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    border-color 0.35s ease;
+}
+
+/* ==========================================
+   SHINE
+========================================== */
+
+.glass-shine {
+  position: absolute;
+
+  top: -120%;
+  left: -45%;
+
+  width: 80px;
+  height: 240%;
+
+  transform: rotate(25deg);
+
+  background: linear-gradient(
+    transparent,
+    rgba(255, 255, 255, 0.22),
+    transparent
+  );
+
+  pointer-events: none;
+
+  transition: 0.9s;
+}
+
+.glass-hover:hover .glass-shine {
+  left: 140%;
+}
+
+/* ==========================================
+   HOVER
+========================================== */
+
+.glass-hover:hover {
+  transform: translateY(-10px);
+
+  border-color: rgba(124, 58, 237, 0.35);
+
+  box-shadow:
+    0 25px 55px rgba(124, 58, 237, 0.22),
+    0 8px 18px rgba(56, 189, 248, 0.12);
+}
+
+/* ==========================================
+   DARK
+========================================== */
+
+body.dark .glass-card {
+  background: linear-gradient(
+    145deg,
+    rgba(20, 25, 45, 0.62),
+    rgba(12, 18, 35, 0.48)
+  );
+}
+
+/* ==========================================
+   LIGHT
+========================================== */
+
+body.light .glass-card {
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.7),
+    rgba(245, 247, 255, 0.58)
+  );
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 768px) {
+  .glass-card {
+    padding: 22px;
+    border-radius: 22px;
+  }
+}

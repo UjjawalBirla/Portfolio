@@ -1,0 +1,391 @@
+/* ==========================================
+   EXPERIENCE SECTION
+========================================== */
+
+.experience {
+  position: relative;
+  overflow: hidden;
+  padding: 120px 0;
+}
+
+/* ==========================================
+   HEADER
+========================================== */
+
+.experience-header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 80px;
+}
+
+.experience-header h2 {
+  font-size: 3rem;
+  margin: 20px 0;
+}
+
+.experience-header h2 span {
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.experience-header p {
+  color: var(--text-light);
+  line-height: 1.9;
+}
+
+/* ==========================================
+   TIMELINE
+========================================== */
+
+.timeline {
+  position: relative;
+  max-width: 900px;
+  margin: auto;
+  padding-bottom: 20px;
+}
+
+.timeline-progress {
+  position: absolute;
+
+  left: 38px;
+  top: 0;
+
+  width: 3px;
+  height: 0;
+
+  border-radius: 10px;
+
+  background: linear-gradient(180deg, var(--primary), var(--accent));
+
+  box-shadow:
+    0 0 8px var(--primary),
+    0 0 18px rgba(56, 189, 248, 0.45);
+
+  z-index: 10;
+
+  transition: height 0.08s linear;
+
+  pointer-events: none;
+}
+
+/* ==========================================
+   MOVING PROGRESS LINE
+========================================== */
+
+.timeline-progress {
+  position: absolute;
+
+  left: 38px;
+  top: 0;
+
+  width: 3px;
+
+  height: 0;
+
+  margin-right: 10px;
+
+  border-radius: 10px;
+
+  margin-right: 10px;
+
+  background: linear-gradient(180deg, var(--primary), var(--accent));
+
+  box-shadow:
+    0 0 8px var(--primary),
+    0 0 18px rgba(3, 4, 4, 0.45);
+
+  z-index: 5;
+
+  transition: height 0.08s linear;
+
+  pointer-events: none;
+}
+
+/* ==========================================
+   EXPERIENCE CARD
+========================================== */
+
+.exp-card {
+  position: relative;
+
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 28px;
+
+  margin-bottom: 45px;
+
+  padding: 30px;
+
+  border-radius: 28px;
+
+  transition:
+    transform 0.45s,
+    box-shadow 0.45s;
+
+  z-index: 2;
+}
+
+.exp-card:hover {
+  transform: translateY(-10px);
+
+  box-shadow: 0 25px 55px rgba(124, 58, 237, 0.25);
+}
+
+/* ==========================================
+   ICON
+========================================== */
+
+.exp-icon {
+  position: relative;
+
+  width: 76px;
+  height: 76px;
+
+  min-width: 76px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 22px;
+
+  font-size: 2rem;
+
+  color: white;
+
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+
+  z-index: 6;
+
+  box-shadow: 0 10px 30px rgba(124, 58, 237, 0.25);
+}
+
+/* ==========================================
+   CONTENT
+========================================== */
+
+.exp-content {
+  flex: 1;
+}
+
+.duration {
+  display: inline-block;
+
+  padding: 8px 16px;
+
+  margin-bottom: 15px;
+
+  border-radius: 999px;
+
+  color: var(--accent);
+
+  background: rgba(56, 189, 248, 0.12);
+
+  font-size: 0.85rem;
+}
+
+.exp-content h3 {
+  font-size: 1.5rem;
+
+  margin: 0 0 6px;
+}
+
+.exp-content h4 {
+  color: var(--accent);
+
+  margin: 0 0 18px;
+}
+
+.exp-content p {
+  color: var(--text-light);
+
+  line-height: 1.9;
+
+  margin: 0;
+}
+
+/* ==========================================
+   TECH STACK
+========================================== */
+
+.tech-stack {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 12px;
+
+  margin-top: 22px;
+}
+
+.tech-stack span {
+  padding: 10px 16px;
+
+  border-radius: 14px;
+
+  background: rgba(255, 255, 255, 0.05);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  transition: 0.35s;
+}
+
+.tech-stack span:hover {
+  transform: translateY(-4px);
+
+  background: linear-gradient(
+    135deg,
+    rgba(124, 58, 237, 0.18),
+    rgba(56, 189, 248, 0.18)
+  );
+}
+
+/* ==========================================
+   TABLET
+========================================== */
+@media (max-width: 900px) {
+  .timeline-progress {
+    left: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .timeline-progress {
+    left: 27px;
+  }
+}
+
+@media (max-width: 500px) {
+  .timeline-progress {
+    left: 24px;
+  }
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 768px) {
+  .experience {
+    padding: 90px 0;
+  }
+
+  .experience-header {
+    margin-bottom: 55px;
+  }
+
+  .experience-header h2 {
+    font-size: 2.3rem;
+  }
+
+  .experience-header p {
+    font-size: 0.9rem;
+  }
+
+  /* Moving line */
+
+  .exp-card {
+    flex-direction: row;
+
+    gap: 16px;
+
+    padding: 20px;
+
+    margin-bottom: 30px;
+  }
+
+  .exp-icon {
+    width: 55px;
+    height: 55px;
+
+    min-width: 55px;
+
+    border-radius: 16px;
+
+    font-size: 1.4rem;
+  }
+
+  .exp-content h3 {
+    font-size: 1.15rem;
+  }
+
+  .exp-content h4 {
+    font-size: 0.95rem;
+
+    margin-bottom: 12px;
+  }
+
+  .exp-content p {
+    font-size: 0.88rem;
+
+    line-height: 1.7;
+  }
+
+  .duration {
+    padding: 6px 12px;
+
+    font-size: 0.75rem;
+
+    margin-bottom: 10px;
+  }
+
+  .tech-stack {
+    gap: 7px;
+
+    margin-top: 16px;
+  }
+
+  .tech-stack span {
+    padding: 7px 10px;
+
+    font-size: 0.72rem;
+  }
+}
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media (max-width: 500px) {
+  .experience {
+    padding: 70px 0;
+  }
+
+  .experience-header h2 {
+    font-size: 2rem;
+  }
+
+  .exp-card {
+    gap: 12px;
+
+    padding: 16px;
+  }
+
+  .exp-icon {
+    width: 48px;
+    height: 48px;
+
+    min-width: 48px;
+
+    border-radius: 14px;
+
+    font-size: 1.2rem;
+  }
+
+  .exp-content h3 {
+    font-size: 1rem;
+  }
+
+  .exp-content h4 {
+    font-size: 0.85rem;
+  }
+
+  .exp-content p {
+    font-size: 0.8rem;
+  }
+}

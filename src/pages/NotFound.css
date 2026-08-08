@@ -1,0 +1,131 @@
+/* ==========================================
+   NOT FOUND PAGE
+========================================== */
+
+.not-found {
+  min-height: 100vh;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 120px 20px;
+}
+
+.error-content {
+  max-width: 650px;
+
+  margin: auto;
+
+  text-align: center;
+
+  padding: 60px 40px;
+
+  border-radius: 30px;
+}
+
+/* ==========================================
+   404
+========================================== */
+
+.error-content h1 {
+  font-size: 8rem;
+
+  line-height: 1;
+
+  margin-bottom: 20px;
+
+  font-weight: 900;
+
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+
+  -webkit-background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+}
+
+/* ==========================================
+   TITLE
+========================================== */
+
+.error-content h2 {
+  margin-bottom: 18px;
+
+  font-size: 2rem;
+}
+
+/* ==========================================
+   DESCRIPTION
+========================================== */
+
+.error-content p {
+  max-width: 500px;
+
+  margin: 0 auto 35px;
+
+  color: var(--text-light);
+
+  line-height: 1.8;
+}
+
+/* ==========================================
+   BUTTON
+========================================== */
+
+.error-btn {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 15px 30px;
+
+  border-radius: 18px;
+
+  color: #fff;
+
+  font-weight: 600;
+
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+
+  transition: var(--transition);
+
+  box-shadow: 0 15px 35px rgba(124, 58, 237, 0.25);
+}
+
+.error-btn:hover {
+  transform: translateY(-6px);
+
+  box-shadow: 0 22px 45px rgba(124, 58, 237, 0.35);
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 768px) {
+  .error-content {
+    padding: 40px 25px;
+  }
+
+  .error-content h1 {
+    font-size: 5rem;
+  }
+
+  .error-content h2 {
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .error-content h1 {
+    font-size: 4rem;
+  }
+
+  .error-btn {
+    width: 100%;
+  }
+}

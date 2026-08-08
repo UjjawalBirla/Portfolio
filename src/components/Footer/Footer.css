@@ -1,0 +1,221 @@
+/* ==========================================
+   FOOTER
+========================================== */
+
+.footer {
+  position: relative;
+  overflow: hidden;
+
+  margin-top: 120px;
+
+  padding-top: 70px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+
+  background: linear-gradient(180deg, transparent, rgba(124, 58, 237, 0.05));
+}
+
+/* ==========================================
+   TOP LINE
+========================================== */
+
+.footer-top-line {
+  width: 100%;
+  height: 2px;
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--primary),
+    var(--accent),
+    transparent
+  );
+
+  margin-bottom: 60px;
+}
+
+/* ==========================================
+   GRID
+========================================== */
+
+.footer-grid {
+  display: grid;
+
+  grid-template-columns: 2fr 1fr 1fr;
+
+  gap: 60px;
+}
+
+/* ==========================================
+   BRAND
+========================================== */
+
+.footer-brand h2 {
+  font-size: 2rem;
+
+  margin-bottom: 18px;
+}
+
+.footer-brand span {
+  color: var(--accent);
+}
+
+.footer-brand p {
+  color: var(--text-light);
+
+  line-height: 1.9;
+
+  max-width: 420px;
+}
+
+/* ==========================================
+   LINKS
+========================================== */
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.footer-links h3,
+.footer-social h3 {
+  margin-bottom: 16px;
+}
+
+.footer-links a {
+  color: var(--text-light);
+
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  color: var(--accent);
+
+  transform: translateX(6px);
+}
+
+/* ==========================================
+   SOCIAL
+========================================== */
+
+.footer-social div {
+  display: flex;
+
+  gap: 16px;
+}
+
+.footer-social a {
+  width: 52px;
+  height: 52px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 16px;
+
+  background: var(--glass);
+
+  border: 1px solid var(--glass-border);
+
+  color: var(--text);
+
+  transition: 0.35s;
+}
+
+.footer-social a:hover {
+  transform: translateY(-8px) rotate(8deg);
+
+  color: white;
+
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+
+  box-shadow: 0 15px 35px rgba(124, 58, 237, 0.35);
+}
+
+/* ==========================================
+   BOTTOM
+========================================== */
+
+.footer-bottom {
+  margin-top: 70px;
+
+  padding: 28px 0;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-bottom p {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  color: var(--text-light);
+}
+
+.heart {
+  color: #ff4d6d;
+
+  animation: pulse 1.8s infinite;
+}
+
+@keyframes pulse {
+  50% {
+    transform: scale(1.3);
+  }
+}
+
+/* ==========================================
+   SCROLL TOP
+========================================== */
+
+.scroll-top {
+  width: 58px;
+  height: 58px;
+
+  border: none;
+
+  border-radius: 18px;
+
+  cursor: pointer;
+
+  color: white;
+
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+
+  transition: 0.35s;
+}
+
+.scroll-top:hover {
+  transform: translateY(-8px);
+
+  box-shadow: 0 20px 40px rgba(124, 58, 237, 0.35);
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 900px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+
+    gap: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-bottom {
+    flex-direction: column;
+
+    gap: 25px;
+  }
+}

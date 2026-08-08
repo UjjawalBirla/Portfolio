@@ -1,0 +1,189 @@
+/* ===========================
+   Google Font
+=========================== */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+/* ===========================
+   Theme Variables
+=========================== */
+
+:root {
+  /* Light Theme */
+
+  --bg: #eef2ff;
+  --bg-secondary: #e0e7ff;
+
+  --glass: rgba(255, 255, 255, 0.62);
+  --glass-border: rgba(124, 58, 237, 0.18);
+
+  --text: #1e1b4b;
+  --text-light: #475569;
+
+  --primary: #6d28d9;
+  --secondary: #4338ca;
+  --accent: #2563eb;
+
+  --shadow: 0 10px 30px rgba(109, 40, 217, 0.12);
+
+  --blur: blur(18px);
+}
+
+body.dark {
+  /* Dark Theme */
+
+  --bg: #09090f;
+  --bg-secondary: #111827;
+
+  --glass: rgba(20, 25, 45, 0.58);
+  --glass-border: rgba(255, 255, 255, 0.08);
+
+  --text: #f8fafc;
+  --text-light: #94a3b8;
+
+  --primary: #7c3aed;
+  --secondary: #4f46e5;
+  --accent: #38bdf8;
+
+  --shadow: 0 15px 40px rgba(0, 0, 0, 0.45);
+}
+
+/* ===========================
+   Reset
+=========================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+
+  background:
+    radial-gradient(circle at top left, #4f46e520, transparent 35%),
+    radial-gradient(circle at bottom right, #7c3aed20, transparent 35%),
+    var(--bg);
+
+  color: var(--text);
+
+  transition: 0.35s;
+
+  min-height: 100vh;
+}
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/* ===========================
+   Selection
+=========================== */
+
+::selection {
+  background: var(--primary);
+  color: white;
+}
+
+/* ===========================
+   Scrollbar
+=========================== */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(var(--primary), var(--secondary));
+
+  border-radius: 20px;
+}
+
+/* ===========================
+   Links
+=========================== */
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+}
+
+/* ===========================
+   Glass Card
+=========================== */
+
+.glass {
+  background: var(--glass);
+
+  backdrop-filter: var(--blur);
+
+  border: 1px solid var(--glass-border);
+
+  border-radius: 24px;
+
+  box-shadow: var(--shadow);
+}
+
+/* ===========================
+   Container
+=========================== */
+
+.container {
+  width: min(1200px, 92%);
+  margin: auto;
+}
+@media (max-width: 900px) {
+  .mobile-menu {
+    position: fixed;
+
+    top: 0;
+    right: 0;
+
+    width: 310px;
+    max-width: 85vw;
+    height: 100dvh;
+
+    z-index: 99999;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 90px 30px;
+
+    box-sizing: border-box;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    transform: translateX(100%);
+
+    background: rgba(255, 255, 255, 0.92);
+
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+  }
+
+  .mobile-menu.open {
+    transform: translateX(0);
+  }
+}

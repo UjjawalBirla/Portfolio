@@ -1,0 +1,108 @@
+/* ==========================================
+   ROOT VARIABLES
+========================================== */
+
+:root {
+  /* ========= COLORS ========= */
+
+  --primary: #7c3aed;
+  --secondary: #6366f1;
+  --accent: #38bdf8;
+
+  --success: #22c55e;
+  --warning: #f59e0b;
+  --danger: #ef4444;
+
+  /* ========= BACKGROUND ========= */
+
+  --bg: #09090f;
+  --bg-secondary: #111827;
+  --surface: rgba(255, 255, 255, 0.05);
+
+  /* ========= TEXT ========= */
+
+  --text: #f8fafc;
+  --text-light: #94a3b8;
+  --heading: #ffffff;
+
+  /* ========= GLASS ========= */
+
+  --glass: rgba(255, 255, 255, 0.06);
+  --glass-hover: rgba(255, 255, 255, 0.1);
+  --glass-border: rgba(255, 255, 255, 0.08);
+
+  /* ========= SHADOW ========= */
+
+  --shadow-sm: 0 8px 18px rgba(0, 0, 0, 0.15);
+
+  --shadow-md: 0 15px 35px rgba(0, 0, 0, 0.25);
+
+  --shadow-lg: 0 25px 60px rgba(124, 58, 237, 0.25);
+
+  /* ========= BORDER ========= */
+
+  --radius-sm: 12px;
+  --radius-md: 20px;
+  --radius-lg: 30px;
+  --radius-xl: 40px;
+
+  /* ========= CONTAINER ========= */
+
+  --container: 1280px;
+
+  /* ========= SPACING ========= */
+
+  --section-space: 120px;
+
+  /* ========= TRANSITION ========= */
+
+  --transition: 0.35s ease;
+}
+
+/* ==========================================
+   LIGHT THEME
+========================================== */
+
+body.light {
+  --bg: #f6f8ff;
+
+  --bg-secondary: #ffffff;
+
+  --surface: rgba(255, 255, 255, 0.85);
+
+  --text: #0f172a;
+
+  --heading: #020617;
+
+  --text-light: #64748b;
+
+  --glass: rgba(255, 255, 255, 0.7);
+
+  --glass-hover: rgba(255, 255, 255, 0.92);
+
+  --glass-border: rgba(148, 163, 184, 0.18);
+}
+
+/* ==========================================
+   DARK THEME
+========================================== */
+
+body.dark {
+  --bg: #09090f;
+
+  --bg-secondary: #111827;
+
+  --surface: rgba(255, 255, 255, 0.05);
+
+  --text: #f8fafc;
+
+  --heading: #ffffff;
+
+  --text-light: #94a3b8;
+
+  --glass: rgba(255, 255, 255, 0.05);
+
+  --glass-hover: rgba(255, 255, 255, 0.08);
+
+  --glass-border: rgba(255, 255, 255, 0.08);
+}

@@ -1,0 +1,89 @@
+/* ==========================================
+   PAGE TRANSITION
+========================================== */
+
+.page-transition {
+  position: relative;
+
+  width: 100%;
+
+  min-height: 100vh;
+
+  opacity: 0;
+
+  transform: translateY(40px);
+
+  will-change: opacity, transform;
+
+  backface-visibility: hidden;
+
+  perspective: 1000px;
+}
+
+/* ==========================================
+   STAGGER ITEMS
+========================================== */
+
+.stagger {
+  opacity: 0;
+
+  transform: translateY(30px);
+
+  will-change: transform, opacity;
+}
+
+/* ==========================================
+   SECTION
+========================================== */
+
+.section {
+  padding: 120px 0;
+}
+
+/* ==========================================
+   GPU OPTIMIZATION
+========================================== */
+
+.page-transition,
+.stagger {
+  transform: translate3d(0, 0, 0);
+}
+
+/* ==========================================
+   SMOOTH IMAGE
+========================================== */
+
+img {
+  user-select: none;
+
+  -webkit-user-drag: none;
+}
+
+/* ==========================================
+   LINK
+========================================== */
+
+a {
+  transition:
+    color 0.3s,
+    transform 0.3s,
+    opacity 0.3s;
+}
+
+/* ==========================================
+   BUTTON
+========================================== */
+
+button {
+  transition: all 0.3s ease;
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 768px) {
+  .section {
+    padding: 90px 0;
+  }
+}

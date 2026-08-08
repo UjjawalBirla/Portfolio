@@ -1,0 +1,115 @@
+/* ==========================================
+   PRELOADER
+========================================== */
+
+.preloader {
+  position: fixed;
+  inset: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 999999;
+
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(124, 58, 237, 0.25),
+      transparent 35%
+    ),
+    radial-gradient(
+      circle at bottom right,
+      rgba(56, 189, 248, 0.2),
+      transparent 35%
+    ),
+    #09090f;
+}
+
+/* ==========================================
+   CONTENT
+========================================== */
+
+.loader-content {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+}
+
+/* ==========================================
+   LOGO
+========================================== */
+
+.loader-logo {
+  font-size: 4rem;
+
+  font-weight: 800;
+
+  letter-spacing: 2px;
+
+  color: white;
+
+  margin-bottom: 35px;
+}
+
+.loader-logo span {
+  color: var(--accent);
+}
+
+/* ==========================================
+   BAR
+========================================== */
+
+.loader-bar {
+  width: 260px;
+
+  height: 7px;
+
+  border-radius: 20px;
+
+  overflow: hidden;
+
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.loader-bar span {
+  display: block;
+
+  width: 0;
+
+  height: 100%;
+
+  border-radius: inherit;
+
+  background: linear-gradient(90deg, var(--primary), var(--accent));
+}
+
+/* ==========================================
+   GLOW
+========================================== */
+
+.loader-logo {
+  text-shadow: 0 0 30px rgba(124, 58, 237, 0.45);
+}
+.loader-logo p {
+  text-shadow: 0 0 30px rgba(124, 58, 237, 0.45);
+  font-size: 20px;
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 600px) {
+  .loader-logo {
+    font-size: 2.8rem;
+  }
+
+  .loader-bar {
+    width: 200px;
+  }
+}

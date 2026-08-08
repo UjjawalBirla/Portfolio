@@ -1,0 +1,76 @@
+/* ==========================================
+   ANIMATED TEXT
+========================================== */
+
+.animated-text {
+  display: inline-block;
+
+  font-size: 3.5rem;
+
+  font-weight: 800;
+
+  line-height: 1.15;
+
+  color: var(--text);
+
+  letter-spacing: -0.5px;
+
+  overflow: hidden;
+}
+
+/* ==========================================
+   LETTER
+========================================== */
+
+.letter {
+  display: inline-block;
+
+  opacity: 0;
+
+  transform: translateY(60px) rotateX(-90deg);
+
+  transform-origin: bottom;
+
+  will-change: transform, opacity;
+}
+
+/* ==========================================
+   GRADIENT
+========================================== */
+
+.gradient-text {
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ==========================================
+   GLOW
+========================================== */
+
+.gradient-text {
+  filter: drop-shadow(0 0 18px rgba(124, 58, 237, 0.18));
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 992px) {
+  .animated-text {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .animated-text {
+    font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .animated-text {
+    font-size: 2rem;
+  }
+}

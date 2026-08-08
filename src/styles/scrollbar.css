@@ -1,0 +1,90 @@
+/* ==========================================
+   SCROLLBAR
+========================================== */
+
+/* Chrome / Edge / Brave */
+
+::-webkit-scrollbar {
+  width: 12px;
+
+  height: 12px;
+}
+
+/* ==========================================
+   TRACK
+========================================== */
+
+::-webkit-scrollbar-track {
+  background: var(--bg);
+
+  border-radius: 999px;
+}
+
+/* ==========================================
+   THUMB
+========================================== */
+
+::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+
+  border: 3px solid var(--bg);
+
+  background: linear-gradient(
+    180deg,
+    var(--primary),
+    var(--secondary),
+    var(--accent)
+  );
+
+  transition: background 0.3s ease;
+}
+
+/* ==========================================
+   HOVER
+========================================== */
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #8b5cf6, #6366f1, #06b6d4);
+}
+
+/* ==========================================
+   CORNER
+========================================== */
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+/* ==========================================
+   FIREFOX
+========================================== */
+
+* {
+  scrollbar-width: thin;
+
+  scrollbar-color: var(--primary) var(--bg);
+}
+
+/* ==========================================
+   LIGHT MODE
+========================================== */
+
+body.light ::-webkit-scrollbar-track {
+  background: #eef2ff;
+}
+
+body.light * {
+  scrollbar-color: var(--primary) #eef2ff;
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 768px) {
+  ::-webkit-scrollbar {
+    width: 8px;
+
+    height: 8px;
+  }
+}
