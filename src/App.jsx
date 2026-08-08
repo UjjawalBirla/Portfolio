@@ -8,7 +8,7 @@ import CursorGlow from "./components/CursorGlow/CursorGlow";
 import ScrollProgress from "./components/ScrollProgress/ScrollProgress";
 import AuroraBackground from "./components/AuroraBackground/AuroraBackground";
 
-import PreLoader from "./components/PreLoader/PreLoader";
+import PreLoader from "./components/PreLoader/Preloader";
 import Loader from "./components/Loader/Loader";
 
 import Home from "./pages/Home";
