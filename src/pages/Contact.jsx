@@ -66,7 +66,7 @@ export default function Contact() {
               <div>
                 <h4>Email</h4>
 
-                <p>yourmail@gmail.com</p>
+                <p>ujjawalbirla369@gmail.com</p>
               </div>
             </div>
 
